@@ -1,0 +1,220 @@
+/* Estilos Generales de reseteo */
+:root {
+  --first-color: #46559c;
+  --second-color: #c36065;
+  --third-color: #8495e6;
+  --gray-light-color: #f3f3f3;
+  --black-color: #222;
+}
+html {
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: var(--gray-light-color);
+  color: var(--black-color);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+li {
+  list-style: none;
+}
+
+/* helpers */
+.container {
+  width: 95vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-large {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--first-color);
+  color: var(--gray-light-color);
+}
+
+.btn:hover {
+  background-color: var(--second-color);
+  color: var(--black-color);
+}
+
+/* Estilos de la pagina */
+
+/* Estilos del Header */
+.header {
+  background-color: var(--first-color);
+  color: var(--gray-light-color);
+  margin-bottom: 3.5rem;
+  box-shadow: 0 0 10px var(--black-color);
+}
+
+.header h1 {
+  padding: 1rem 0;
+  font-weight: lighter;
+}
+
+/* Estilos del main */
+
+/* Seccion my-person */
+.my-person {
+  margin-bottom: 3.5rem;
+}
+
+.my-person .container {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-person h2 {
+  margin-bottom: 1.5rem;
+}
+
+.my-person .personal-description {
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.my-person .photo img {
+  padding: 0 2rem;
+  max-width: 400px;
+}
+
+/* Seccion about-me */
+.about-me {
+  padding: 3rem 0;
+  margin-bottom: 2.5rem;
+  background-color: var(--first-color);
+  color: var(--gray-light-color);
+  box-shadow: 0 0 10px var(--black-color);
+}
+
+.about-me h3 {
+  margin-bottom: 1.5rem;
+}
+
+.about-me h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-me .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-me .skills {
+  grid-row: span 3;
+  background-color: var(--third-color);
+  border: thin solid #c36065;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px var(--black-color);
+}
+
+.about-me .laboral-experience,
+.about-me .hobbies,
+.about-me .education {
+  background-color: var(--third-color);
+  border: thin solid #c36065;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0 10px var(--black-color);
+}
+
+/* Seccion about-carrier */
+.about-carrier {
+  padding: 3rem 0;
+  background-color: white;
+  box-shadow: 0 0 10px var(--black-color);
+}
+.about-carrier .container {
+  width: 80%;
+  max-width: 992px;
+}
+
+.about-carrier h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-carrier p {
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: 1rem;
+  padding: 1.5rem 0;
+  background-color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  letter-spacing: 2px;
+  color: var(--gray-light-color);
+  font-weight: bold;
+}

@@ -1,0 +1,39 @@
+body {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f3f3f3;
+}
+
+div {
+  margin: auto;
+}
+
+img {
+  width: 400px;
+}
+
+.container {
+  background-color: #33333370;
+  width: 95vw;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.divClass h1 {
+  color: #ad1234;
+}
+
+.thirdDiv {
+  width: 500px;
+  height: 600px;
+  background-color: #6f8ee2;
+  padding: 50px;
+  border: thick solid #8abb33;
+}
+
+#spanId {
+  font-size: 18px;
+}
